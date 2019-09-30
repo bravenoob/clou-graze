@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.bd.bern.clou"
+    },
+    "jhipsterVersion": "6.3.1",
+    "applicationType": "microservice",
+    "baseName": "graze",
+    "packageName": "com.bd.bern.clou",
+    "packageFolder": "com/bd/bern/clou",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "no",
+    "devDatabaseType": "no",
+    "prodDatabaseType": "no",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "Mjk2MWQ3MDYyN2Q3ZWI4MTFkMTgxMGFjYmU1ODNjMzAzM2IwYTc4ZDU4ZmRkNWNhYjc2YWJlNzg3NGQzYWI5MzExYjk1NTBlYzk5MGJmNTMyYWI1OWM1MTE4YjllYTQ2MjRlM2MwYzBkN2M5MWVkMzYzODdmYTNjMTViYjVlNjA=",
+    "embeddableLaunchScript": false,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
