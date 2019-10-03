@@ -10,4 +10,14 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  */
 @ConfigurationProperties(prefix = "application", ignoreUnknownFields = false)
 public class ApplicationProperties {
+
+    String movementTopic;
+
+    public String getMovementTopic() {
+        return movementTopic;
+    }
+
+    public void setMovementTopic(String movementTopic) {
+        this.movementTopic = movementTopic;
+    }
 }

@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.kafka.test.context.EmbeddedKafka;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
@@ -16,6 +17,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @EmbeddedKafka
 @SpringBootTest(classes = GrazeApp.class)
+@TestPropertySource(properties = {
+    "application.movement-topic=topic",
+})
 public class GrazeKafkaResourceIT {
 
     @Autowired
