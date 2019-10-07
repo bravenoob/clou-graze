@@ -2,9 +2,7 @@ package com.bd.bern.clou;
 
 import com.bd.bern.clou.config.ApplicationProperties;
 import com.bd.bern.clou.config.DefaultProfileUtil;
-
 import io.github.jhipster.config.JHipsterConstants;
-
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +11,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.stream.schema.client.EnableSchemaRegistryClient;
 import org.springframework.core.env.Environment;
 
 import java.net.InetAddress;
@@ -23,6 +22,7 @@ import java.util.Collection;
 @SpringBootApplication
 @EnableConfigurationProperties({ApplicationProperties.class})
 @EnableDiscoveryClient
+@EnableSchemaRegistryClient
 public class GrazeApp implements InitializingBean {
 
     private static final Logger log = LoggerFactory.getLogger(GrazeApp.class);
@@ -101,6 +101,6 @@ public class GrazeApp implements InitializingBean {
             configServerStatus = "Not found or not setup for this application";
         }
         log.info("\n----------------------------------------------------------\n\t" +
-                "Config Server: \t{}\n----------------------------------------------------------", configServerStatus);
+            "Config Server: \t{}\n----------------------------------------------------------", configServerStatus);
     }
 }

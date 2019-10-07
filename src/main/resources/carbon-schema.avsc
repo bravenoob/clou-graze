@@ -1,0 +1,18 @@
+{
+    "type": "record",
+    "name": "Carbon",
+    "namespace": "com.bd.bern.clou.schema",
+    "fields": [
+    {
+        "name": "id",
+        "type": "int"
+    },
+    {
+        "name": "firstName",
+        "type": "string"
+    },
+    {
+        "name": "lastName",
+        "type": "string"
+    }]
+}
