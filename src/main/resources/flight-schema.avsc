@@ -1,0 +1,26 @@
+{
+    "type": "record",
+    "name": "Flight",
+    "namespace": "com.bd.bern.clou.schema",
+    "fields": [
+    {
+        "name": "icao24",
+        "type": "string"
+    },
+    {
+        "name": "velocity",
+        "type": [
+              "null",
+              "double"
+            ],
+        "default": null
+    },
+    {
+        "name": "verticalRate",
+        "type": [
+              "null",
+              "double"
+            ],
+        "default": null
+    }]
+}
